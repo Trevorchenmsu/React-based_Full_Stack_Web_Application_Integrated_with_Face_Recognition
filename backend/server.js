@@ -15,11 +15,12 @@ const db = knex({
   connection: {
     host : '127.0.0.1',
     // host : 'localhost',
-    user : 'postgres',
-    password : 'Song8986778#',
-    database : 'smart_brain'
+    user : 'your user name',
+    password : 'your password',
+    database : 'database name'
   }
 });
+
 
 const app = express();
 
@@ -33,11 +34,6 @@ app.get('/profile/:id', (req, res) => { profile.handleProfileGet(req, res, db)})
 app.put('/image', (req, res) => { image.handleImage(req, res, db)})
 app.post('/imageurl', (req, res) => { image.handleApiCall(req, res)})
 
-// app.listen(3000, ()=> {
-//   console.log('app is running on port 3000');
-// })
-
-const PORT = process.env.PORT
-app.listen(PORT || 3000, () => {
-  console.log('Server is listening on port ${process.env.PORT}');
-});
+app.listen(3000, ()=> {
+  console.log('app is running on port 3000');
+})
