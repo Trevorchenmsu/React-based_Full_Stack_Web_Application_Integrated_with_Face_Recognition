@@ -1,7 +1,7 @@
 # SmartBrain-api
 
 This repo is the local version of the smart brain project. If you want to learn the deployed version, you can visit
-the other two repos which include backend&database and frontend depolyed on Heroku.
+the other two repos which include backend&database and frontend depolyed on Heroku [(Click me)](https://smart-brain-cjs.herokuapp.com/).
 
 
 [Frontend](https://github.com/Trevorchenmsu/full-stack-face-detection-frontend-deployment)
